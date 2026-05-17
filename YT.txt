@@ -1,2 +1,96 @@
 PRACTICAL 3: https://youtu.be/rUeL8kZbjPI?si=j0V8vk0P50icp7ot
 PRACTICAL 4:  https://youtu.be/n4Nx7YD5_mY?si=1uq_1Ar8_UANZO5F
+
+
+CC-03
+
+//Apex Program in Salesforce
+
+step 1 : Login Salesforce developer Edition (agentforce.com)
+            
+Step 2 : Open Lightning Experience
+
+Step 3 : Go to Setup
+
+Step 4 : Click on "Developer Console"
+         
+         1. Go to file -> New -> Apex Class -> give class name (Ex.PrimeNumberCheck)
+         2. Write code 
+         3. Save code
+         4. Click on Debug -> open execute anonymous window 
+                    -> write class name (Ex.PrimeNumberCheck.checkPrime(17);)                                                                                                                   
+         5. open log -> Execute 
+         6. Show Output Debug Only
+
+Code :
+
+ public class PrimeNumberCheck {
+
+    public static void checkPrime(Integer num) {
+
+        Boolean isPrime = true;
+
+        for(Integer i = 2; i < num; i++) {
+
+            if(Math.mod(num, i) == 0) {
+                isPrime = false;
+                break;
+            }
+        }
+
+        if(isPrime && num > 1) {
+            System.debug(num + ' is Prime');
+        } else {
+            System.debug(num + ' is Not Prime');
+        }
+    }
+}
+
+CC-04
+
+// Create Custom App Using Salesforce.com
+
+Step 1 : Login Salesforce Developer Edition (agentforce.com)
+
+Step 2 : Click on Setting -> Service Setup -> Click on Create
+           
+           1. Create Custom Object -> New Custom Object
+           2. Give Label Name /Obj name (Student, College, Cource)
+           3. Save & Next -> Create 2,3 Objects  -> Save
+
+Step 3 : Click on Object Manager Select Existing Object (Ex. Student , College)
+         
+         1. Click on fields & relationships
+         2. click on new
+         3. select datatype
+         4. Give name Field Label (Ex. Student Name/Id)
+         5. Click allow Checkboxes 
+         6. Next -> Next -> Save & New 
+         7. again select new object & Repeat this process till all object field not created
+
+Step 4 : Go to Setup
+
+         1. Click on Search bar& Search "Tabs" -> Click on Tabs
+         2. Custom Object Tab -> New
+         3. Select Existing Object (Student , College)
+         4. Select Tab Style
+         5. Click Next -> Next -> Save
+
+Step 5 : Go to Setting -> Setup
+
+        1. Search in Search bar "App Manager"
+        2. Click New lightning App
+        3. Give App Name (Student_App) / Developer Name -> Upload Logo
+        4. Next -> Next
+        5. Select Some Tabs -> Next
+        6. Select User Profile "System Administrator"
+        7. Save & Finish
+
+Step 6 : Click on "App Launcher" .... in left corner 
+         1. Search Our App name (Student_App)
+
+Step 8 : Our App is ready.... Fill Required Data
+
+ 
+                             *Best Of Luck From Computer Department Event Coordinator*
+                                 
